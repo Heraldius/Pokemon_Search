@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PokéSearch</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+    crossorigin="anonymous"
+  />
+
+  <!-- Our own CSS and JS-->
+  <link rel="stylesheet" href="style2.css">
+  <script src="script.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Zilla+Slab:wght@500&display=swap');
+  </style>
+</head>
+
+<body id="searchbytype">
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #333; font-size: 1.4rem; border: 1px">
+    <a class="navbar-brand" style="font-size: 1.4rem;" href="index.html"><img id="logo" height="50" alt="" src="../assets/pokeball.png"></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+        <div class="nav-item dropdown active">
+          <a class="nav-link droptown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="searchnamenumber.html">By name</a>
+            <a class="dropdown-item" href="searchtype.html">By type</a>
+          </div>
+        </div>
+        <a class="nav-item nav-link" href="about.html">About Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="buttons-container">
+    <ul class="buttons" style="max-width: 920px;">
+      <li>
+        <img src="../assets/type-button-icons/normal.png" onclick="searchType('normal')">
+      </li>
+      <li>
+        <img src="../assets/type-button-icons/fighting.png" onclick="searchType('fighting')">
+      </li>
+      <li>
+        <img src="../assets/type-button-icons/flying.png" onclick="searchType('flying')">
+      </li>
+      <li>
+        <img src="../assets/type-button-icons/fire.png" onclick="searchType('fire')">
+      </li>
+      <li>
+        <img src="../assets/type-button-icons/water.png" onclick="searchType('water')">
+      </li>
+      <li>
+        <img src="../assets/type-button-icons/grass.png" onclick="searchType('grass')">
+      </li>
+      <li>
+        <img src="../assets/type-button-icons/electric.png" onclick="searchType('electric')">
+      </li>
+    </ul>
+  </div>
+  <div class="list" id="mylist">
+  </div>
+</body>
+
+</html>
